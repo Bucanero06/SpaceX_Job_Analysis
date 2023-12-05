@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 # Fresh scrape of SpaceX jobs
 FORCE_OVERWRITE = False
-ANALYZE_DATA = True
+SCRAPE_QUALIFICATIONS = True
 
 # Set up the WebDriver
 chrome_options = Options()
@@ -68,7 +68,7 @@ if not os.path.exists("spacex_jobs.csv") or FORCE_OVERWRITE:
     # Save the DataFrame to a CSV file
     df.to_csv("spacex_jobs.csv", index=False)
 
-if ANALYZE_DATA:
+if SCRAPE_QUALIFICATIONS:
     # Load or use the previously created DataFrame
     # If df is not defined then load the CSV file
     try:
