@@ -1,0 +1,95 @@
+{
+  "Professional Summary": "Enthusiastic and driven, a University of Central Florida alumnus with a Bachelor's in Biotechnology and a minor in Physics, embarking on a professional journey marked by a keen integration of academic knowledge and emerging expertise in programming and system architecture. In the two years since graduation, this path has already led to impactful industry experience in development and R&D roles, laying a foundation for tackling complex challenges. While relatively new to large-scale, high-stakes projects, there's a demonstrated capability in backend development and a proven track record of innovative problem-solving in smaller-scale business environments. This blend of academic excellence and practical ingenuity is fueled by a profound passion for research, technology, and the pursuit of groundbreaking advancements.",
+
+  "Research Experience": [
+    {
+      "Period": "August 2019 - December 2022",
+      "Institution": "Physics Department, University of Central Florida",
+      "Position": "OPS Researcher Position",
+      "Focus": "Quantum Charge Migration in Conjugate Systems",
+      "Contributions": [
+        "Algorithm Development for Quantum Simulations: Developed algorithms enhancing data processing in electronic systems study. Included simulations of decoherence and relaxation in N-methylacetamide using Density Matrix Formalism and Open-System Lindblad Equation, contributing to theoretical understanding of quantum phenomena.",
+        "Research in Biomolecular Charge Propagation: Conducted studies on charge propagation in biomolecules using computational methods and analytical tools. Work involved Becke's Partitioning Algorithm on 3D Electronic Density Grid computed from Multi-Configuration Self-Consistent Field simulations, studying dynamics of charge migration in molecular systems.",
+        "Code Development for Research: Key in developing and maintaining computational codes essential for quantum physics research. Involved in Fortran and Python codebases and contributed to their integration into ASTRA (AttoSecond TRAnsitions) program, ensuring support for complex quantum calculations and simulations.",
+        "Ongoing Academic Writing and Research: Actively authoring a manuscript summarizing key findings and methodologies from undergraduate research and OPS role. The paper focuses on quantum charge migration in conjugate systems, aiming to provide a comprehensive resource for peers in the field. This work highlights the ability to effectively synthesize and communicate complex research findings."
+      ]
+    }
+  ],
+
+  "Conference Talks": [
+    {
+      "Title": "Spectral Signature of Molecular Charge Migration",
+      "Events": [
+        "32nd International Conference on Photonic, Electronic and Atomic Collisions",
+        "88th Southeastern Section of the APS Meeting",
+        "Attochem Young Scientists Symposium 2021"
+      ]
+    },
+    {
+      "Title": "Charge Migration in Light-Harvesting Chromophores",
+      "Events": [
+        "Division of Atomic, Molecular and Optical Physics",
+        "National Conference on Undergraduate Research",
+        "Showcase of Undergraduate Research Excellence",
+        "Florida Undergraduate Research Conference 2020"
+      ]
+    }
+  ],
+
+  "Education": [
+    {
+      "Degree": "Bachelor of Science Biotechnology",
+      "Minor": "Physics",
+      "Institution": "University of Central Florida Orlando",
+      "Graduation Date": "December 2022",
+      "Relevant Coursework": [
+        "Directed Independent Studies on Energy Transfer in Biomolecules",
+        "Experimental Molecular Cell Biology",
+        "Biochemistry",
+        "Organic Chemistry"
+      ]
+    },
+    {
+      "Degree": "Associate of Arts Chemistry Track",
+      "Institution": "Hillsborough Community College Tampa, FL",
+      "Graduation Date": "August 2017"
+    }
+  ],
+
+  "Grants": [
+    "Project Participant of Department of Energy Office of Science Grant - 'New correlated numerical methods for attosecond molecular single and double ionization'",
+    "Contributor of National Science Foundation supported 'Attosecond Photoemission Dynamics: Novel AB Initio Methods for Atomic and Molecular Ex-situ Spectrscopies' project",
+    "Research Experience for Undergraduates Grant by the National Science Foundation",
+    "Judges' Choice Award at the 2021 Student Scholar Symposium",
+    "UCF Scholars Award",
+    "UCF Orion Grant"
+  ],
+
+  "Skills": {
+    "Laboratory": [
+      "Proficient in DNA/protein quantification and purification, inoculation, and cell culture techniques."
+    ],
+    "Languages": [
+      "Proficient in Python, intermediate in Fortran, and knowledgeable in Rust, JavaScript, and HTML.",
+      "Spanish Native Level Speaking, Reading, & Writing"
+    ],
+    "Software Practices": [
+      "Experienced in complex problem-solving, software documentation control, debugging, and software design."
+    ],
+    "Web Development": [
+      "Skilled in FastAPI, Uvicorn, Pydantic"
+    ],
+    "DevOps & Virtualization": [
+      "Knowledgeable in Docker, Kubernetes, Terraform, and cloud platforms like AWS and GCP."
+    ],
+    "Libraries and Frameworks": [
+      "Skilled in Sklearn, SciPy, Keras, TensorFlow, RAPIDS, Ray, Pandas, Numpy, Dask, and Numba."
+    ],
+    "Databases": [
+      "Experience with PostgreSQL, Redis, Apache Kafka, MySQL, MongoDB, and Firestore."
+    ],
+    "Version Control": [
+      "Competent with Git and familiar with platforms like GitHub, GitLab, and Bitbucket."
+    ]
+  }
+}
