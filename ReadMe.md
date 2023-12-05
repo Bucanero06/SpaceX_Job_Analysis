@@ -2,14 +2,14 @@
 
 This project is a Python-based analysis of job listings from SpaceX. It uses web scraping and natural language
 processing techniques to analyze the job descriptions and requirements, and then matches them with a given resume. The
-project consists of two main Python scripts: `scrape_spacex_positions.py` and `analyse_spacex_applications.py`.
+project consists of two main Python scripts: `scrape_spacex_positions.py` and `analyze_spacex_applications.py`.
 
 ## Files
 
 - `scrape_spacex_positions.py`: This script is responsible for scraping job listings from the SpaceX website. It
   collects information such as job title, discipline, location, and qualifications.
 
-- `analyse_spacex_applications.py`: This script takes the scraped job listings and a given resume as input. It then
+- `analyze_spacex_applications.py`: This script takes the scraped job listings and a given resume as input. It then
   performs a series of analyses to match the resume with the job listings. The analyses include vectorization of the
   text data, clustering of the job descriptions, calculation of similarity scores between the resume and job
   descriptions, and identification of relevant jobs in each cluster. The script also identifies the skills gap between
@@ -20,7 +20,7 @@ project consists of two main Python scripts: `scrape_spacex_positions.py` and `a
 1. Run `scrape_spacex_positions.py` to scrape job listings from the SpaceX website. The scraped data will be saved in a
    CSV file.
 
-2. Run `analyse_spacex_applications.py` with the scraped job listings and a given resume as input. The script will
+2. Run `analyze_spacex_applications.py` with the scraped job listings and a given resume as input. The script will
    output the results of the analyses.
 
 ## Dependencies
