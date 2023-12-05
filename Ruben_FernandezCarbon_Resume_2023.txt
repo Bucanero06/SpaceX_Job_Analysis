@@ -10,6 +10,17 @@ Professional Summary
 
 Enthusiastic and driven, a University of Central Florida alumnus with a Bachelor's in Biotechnology and a minor in Physics, embarking on a professional journey marked by a keen integration of academic knowledge and emerging expertise in programming and system architecture. In the two years since graduation, this path has already led to impactful industry experience in development and R&D roles, laying a foundation for tackling complex challenges. While relatively new to large-scale, high-stakes projects, there's a demonstrated capability in backend development and a proven track record of innovative problem-solving in smaller-scale business environments. This blend of academic excellence and practical ingenuity is fueled by a profound passion for research, technology, and the pursuit of groundbreaking advancements.
 
+Skills
+
+Laboratory Skills: Proficient in DNA/protein quantification and purification, inoculation, and cell culture techniques.
+Languages: Proficient in Python, intermediate in Fortran, and knowledgeable in Rust, JavaScript, and HTML. 
+Software Practices: Experienced in complex problem-solving, software documentation control, debugging, and software design.
+Web Development: Skilled in FastAPI, Uvicorn, Pydantic
+DevOps & Virtualization: Knowledgeable in Docker, Kubernetes, Terraform, and cloud platforms like AWS and GCP.
+Libraries and Frameworks: Skilled in Sklearn, SciPy, Keras, TensorFlow, RAPIDS, Ray, Pandas, Numpy, Dask, and Numba.
+Databases: Experience with PostgreSQL, Redis, Apache Kafka, MySQL, MongoDB, and Firestore.
+Version Control: Competent with Git and familiar with platforms like GitHub, GitLab, and Bitbucket.
+
 Research Experience
 
 August 2019 - December 2022
@@ -63,15 +74,3 @@ Research Experience for Undergraduates Grant by the National Science Foundation
 Judges' Choice Award at the 2021 Student Scholar Symposium
 UCF Scholars Award
 UCF Orion Grant
-
-Skills
-
-Laboratory Skills: Proficient in DNA/protein quantification and purification, inoculation, and cell culture techniques.
-Languages: Proficient in Python, intermediate in Fortran, and knowledgeable in Rust, JavaScript, and HTML. Spanish Native Level Speaking, Reading, & Writing
-Software Practices: Experienced in complex problem-solving, software documentation control, debugging, and software design.
-Web Development: Skilled in FastAPI, Uvicorn, Pydantic
-
-DevOps & Virtualization: Knowledgeable in Docker, Kubernetes, Terraform, and cloud platforms like AWS and GCP.
-Libraries and Frameworks: Skilled in Sklearn, SciPy, Keras, TensorFlow, RAPIDS, Ray, Pandas, Numpy, Dask, and Numba.
-Databases: Experience with PostgreSQL, Redis, Apache Kafka, MySQL, MongoDB, and Firestore.
-Version Control: Competent with Git and familiar with platforms like GitHub, GitLab, and Bitbucket.
