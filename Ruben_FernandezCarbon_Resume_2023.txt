@@ -7,7 +7,8 @@ WWW: https://github.com/Bucanero06
 
 Professional Summary
 
-Enthusiastic and driven, a University of Central Florida alumnus with a Bachelor's in Biotechnology and a minor in Physics, embarking on a professional journey marked by a keen integration of academic knowledge and emerging expertise in programming and system architecture. In the two years since graduation, this path has already led to impactful industry experience in R&D roles, laying a foundation for tackling complex challenges. While relatively new to large-scale, high-stakes projects, there's a demonstrated capability in backend development and a proven track record of innovative problem-solving in smaller-scale business environments. This blend of academic excellence and practical ingenuity is fueled by a profound passion for research, technology, and the pursuit of groundbreaking advancements.
+A dynamic University of Central Florida alumnus with a Bachelor's in Biotechnology and a minor in Physics, I am on a professional trajectory marked by the seamless integration of academic rigor and a burgeoning expertise in programming and system architecture. Since graduating, my two-year journey in the industry has been distinguished by significant contributions in R&D roles, demonstrating my readiness to tackle complex, high-stakes challenges.
+Though I am in the early stages of large-scale project management, my proficiency in backend development and a history of innovative problem-solving in entrepreneurial settings stand out. This unique blend of academic excellence and hands-on practicality is driven by an unwavering passion for research, technology, and the quest for novel breakthroughs. My skill set includes not only a strong foundation in quantum simulations and biomolecular research but also an adeptness in programming languages and software development practices, positioning me uniquely for roles that demand both scientific acumen and technical prowess.
 
 Research Experience
 
@@ -15,10 +16,10 @@ August 2019 - December 2022
 Physics Department, University of Central Florida
 OPS Researcher Position
 
-Algorithm Development for Quantum Simulations: Developed algorithms enhancing data processing in electronic systems study. Included simulations of decoherence and relaxation in N-methylacetamide using Density Matrix Formalism and Open-System Lindblad Equation, contributing to theoretical understanding of quantum phenomena.
+Algorithm Development for Quantum Simulations: Developed algorithms enhancing data processing in electronic systems study. Included ab-initio simulations of decoherence and relaxation in N-methylacetamide using Density Matrix Formalism and Open-System Lindblad Equation..
 Research in Biomolecular Charge Propagation: Conducted studies on charge propagation in biomolecules using computational methods and analytical tools. Work involved Becke's Partitioning Algorithm on 3D Electronic Density Grid computed from Multi-Configuration Self-Consistent Field simulations, studying dynamics of charge migration in molecular systems.
-Code Development for Research: Key in developing and maintaining computational codes essential for quantum physics research. Involved in Fortran and Python codebases and contributed to their integration into ASTRA (AttoSecond TRAnsitions) program, ensuring support for complex quantum calculations and simulations.
-Ongoing Academic Writing and Research: Actively authoring a manuscript summarizing key findings and methodologies from undergraduate research and OPS role. The paper focuses on quantum charge migration in conjugate systems, aiming to provide a comprehensive resource for peers in the field. This work highlights the ability to effectively synthesize and communicate complex research findings.
+Code Development for Research: Key role developing and maintaining computational codes essential for quantum physics research. Consisted of Fortran and Python codebases and contributed to their integration into ASTRA (AttoSecond TRAnsitions) program, ensuring support for complex quantum calculations and simulations.
+Ongoing Academic Writing and Research: Actively authoring a manuscript summarizing key findings and methodologies from undergraduate research and OPS role. The paper aim to provide a comprehensive resource for peers in the field to utilize the tools created over the past 4 years.
 
 Conference Talks
 Spectral Signature of Molecular Charge Migration
