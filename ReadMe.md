@@ -53,7 +53,7 @@ such as sentiment analysis or named entity recognition, to provide more detailed
 resumes. Additionally, the project could be extended to analyze job listings from other companies or industries.
 
 # P.S.
-*If you are a representative of SpaceX ...  here is my cover letter to you <3*
+*If you are a representative of SpaceX ...  here is my love letter to you <3*
 
 Hi, my name is Ruben and I love learning and the art of learning. I want to learn from the brightest and most inspiring company I believe of this generation. My background is filled with molecular biology and have for a long time been deeply in love with chemistry. In search of deeper truths and to feed my curiosity I joined a brilliant UCF's CREOL professor Luca Argenti and combined our common love for physics and structural biology to expand his AttoSecond TRAnsitions (ASTRA) codebase to include studying electronic charge migration and its reconstruction from experimental 2D spectra data. 
 
