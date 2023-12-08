@@ -15,7 +15,7 @@ project consists of two main Python scripts: `scrape_spacex_positions.py` and `a
   descriptions, and identification of relevant jobs in each cluster. The script also identifies the skills gap between
   the resume and job listings and analyzes the impact of each section of the resume on job similarity.
 
-<p float="center">
+<p align="center">
     <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-59-14.png" height="200" />
     <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-50-30.png" height="150" />
     <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-50-38.png" height="150" />
