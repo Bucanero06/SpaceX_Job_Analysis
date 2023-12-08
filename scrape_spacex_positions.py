@@ -153,7 +153,7 @@ if SCRAPE_QUALIFICATIONS:
                 failed_links.append((title, result))
 
     # Save the DataFrame to a CSV file
-    df.to_csv("spacex_jobs_.csv", index=False)
+    df.to_csv("spacex_jobs.csv", index=False)
 
     # Display the failed links
     print("Failed links:")

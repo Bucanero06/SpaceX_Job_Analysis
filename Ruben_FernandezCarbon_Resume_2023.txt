@@ -16,7 +16,7 @@ August 2019 - December 2022
 Physics Department, University of Central Florida
 OPS Researcher Position
 
-Algorithm Development for Quantum Simulations: Developed algorithms enhancing data processing in electronic systems study. Included ab-initio simulations of decoherence and relaxation in N-methylacetamide using Density Matrix Formalism and Open-System Lindblad Equation..
+Algorithm Development for Quantum Simulations: Developed algorithms enhancing data processing in electronic systems study. Included ab-initio simulations of decoherence and relaxation in N-methylacetamide using Density Matrix Formalism and Open-System Lindblad Equation.
 Research in Biomolecular Charge Propagation: Conducted studies on charge propagation in biomolecules using computational methods and analytical tools. Work involved Becke's Partitioning Algorithm on 3D Electronic Density Grid computed from Multi-Configuration Self-Consistent Field simulations, studying dynamics of charge migration in molecular systems.
 Code Development for Research: Key role developing and maintaining computational codes essential for quantum physics research. Consisted of Fortran and Python codebases and contributed to their integration into ASTRA (AttoSecond TRAnsitions) program, ensuring support for complex quantum calculations and simulations.
 Ongoing Academic Writing and Research: Actively authoring a manuscript summarizing key findings and methodologies from undergraduate research and OPS role. The paper aim to provide a comprehensive resource for peers in the field to utilize the tools created over the past 4 years.
