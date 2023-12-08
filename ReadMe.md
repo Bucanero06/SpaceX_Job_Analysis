@@ -14,13 +14,6 @@ project consists of two main Python scripts: `scrape_spacex_positions.py` and `a
   text data, clustering of the job descriptions, calculation of similarity scores between the resume and job
   descriptions, and identification of relevant jobs in each cluster. The script also identifies the skills gap between
   the resume and job listings and analyzes the impact of each section of the resume on job similarity.
-
-<p align="center">
-    <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-50-30.png" width="300" height="250"/>
-    <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-50-38.png" width="300" height="250"/>
-    <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-51-00.png" width="300" height="250"/>
-    <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-59-14.png" width="900" height="250"/>
-</p>
   
   
   ## Installation
@@ -53,6 +46,13 @@ This project uses the following Python libraries:
 - `matplotlib` and `plotly`: For data visualization.
 - `selenium`: For web scraping (SpaceX's website uses dynamic content that cannot be scraped with `requests`
   or `urllib`)
+
+<p align="center">
+    <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-59-14.png" />
+    <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-50-30.png" />
+    <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-50-38.png" />
+    <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-51-00.png" />
+</p>
 
 ## Future Work
 
