@@ -1,3 +1,6 @@
+import concurrent
+from concurrent.futures import ThreadPoolExecutor
+
 import pandas as pd
 from selenium import webdriver
 from selenium.common import NoSuchElementException
@@ -16,12 +19,11 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-images")
 chrome_options.add_argument("--disable-javascript")
 
-driver = webdriver.Chrome(options=chrome_options)
-
 # If file exists spacex_jobs.csv then do not overwrite it
 import os
 
 if not os.path.exists("spacex_jobs.csv") or FORCE_OVERWRITE:
+    driver = webdriver.Chrome(options=chrome_options)
 
     # Navigate to the SpaceX careers page
     driver.get("https://www.spacex.com/careers/jobs/")
@@ -77,71 +79,81 @@ if SCRAPE_QUALIFICATIONS:
         df = pd.read_csv("spacex_jobs.csv")
 
 
-    # ... previous code to collect job titles and links ...
-
-    # Function to extract basic qualifications
-    def extract_basic_qualifications(driver, url):
-        driver.get(url)
-        wait = WebDriverWait(driver, 10)
-        wait.until(EC.presence_of_element_located((By.ID, "content")))
-
+    def scrape_job(title, link):
+        content_text = None
         try:
-            # XPath to find the <ul> list following the <p> containing "BASIC QUALIFICATIONS"
-            xpath = "//p[strong[contains(text(), 'BASIC QUALIFICATIONS')]]/following-sibling::ul[1]"
-            qualifications_element = driver.find_element(By.XPATH, xpath)
-        except NoSuchElementException:
-            try:
-                xpath = "//div[strong[contains(text(), 'BASIC QUALIFICATIONS')]]/following-sibling::ul[1]"
-                qualifications_element = driver.find_element(By.XPATH, xpath)
-            except NoSuchElementException:
-                try:
-                    xpath = "//div[b[contains(text(), 'Basic Qualifications')]]/following-sibling::ul[1]"
-                    qualifications_element = driver.find_element(By.XPATH, xpath)
-                except NoSuchElementException:
-                    try:
-                        xpath = "//p[b[contains(text(), 'Basic Qualifications')]]/following-sibling::ul[1]"
-                        qualifications_element = driver.find_element(By.XPATH, xpath)
-                    except NoSuchElementException as e:
-                        try:
-                            # XPath to find the <ul> list following the <p> containing "BASIC QUALIFICATIONS"
-                            xpath = "//p[b[contains(text(), 'BASIC QUALIFICATIONS')]]/following-sibling::ul[1]"
-                            qualifications_element = driver.find_element(By.XPATH, xpath)
-                            return [li.find_element(By.TAG_NAME, "p").text for li in
-                                    qualifications_element.find_elements(By.TAG_NAME, "li")]
-                        except NoSuchElementException:
-                            return None
+            driver = webdriver.Chrome(options=chrome_options)  # Initialize the WebDriver
+            wait = WebDriverWait(driver, 10)
 
-        return [li.text for li in qualifications_element.find_elements(By.TAG_NAME, "li")]
-
-
-    # Initialize a dictionary to store job data
-    job_details = {}
-    failed_links = []
-
-    for title, link in zip(df['JOB TITLE'], df['Link']):
-        try:
             print(f"Processing {title} ...")
-            print(f"Link: {link}")
-            qualifications = extract_basic_qualifications(driver, link)
-            if qualifications is None:
-                failed_links.append(link)
-                continue
-            # job_details[title] = {
-            #     "link": link,
-            #     "qualifications": qualifications
-            # }
-            print(f"Qualifications: {qualifications}\n")
+            driver.get(link)
+            wait.until(EC.presence_of_element_located((By.ID, "content")))
+            content = driver.find_element(By.ID, "content")
+            content_text = content.text
+            lines = content_text.split('\n')
 
-            # Add the qualifications to the DataFrame
-            df.loc[df['Link'] == link, 'Qualifications'] = '\n'.join(qualifications)
+            # Initializing variables
+            sections = {
+                "RESPONSIBILITIES:": [],
+                "BASIC QUALIFICATIONS:": [],
+                "PREFERRED SKILLS AND EXPERIENCE:": [],
+                "ADDITIONAL REQUIREMENTS:": [],
+                "COMPENSATION AND BENEFITS:": [],
+                "ITAR REQUIREMENTS:": [],
+            }
+
+            current_section = None
+            for line in lines:
+                # Check if the line is a section header
+                if any(section in line for section in sections):
+                    current_section = next(section for section in sections if section in line)
+                elif current_section:
+                    # Add the line to the current section if it's not empty
+                    if line.strip():
+                        sections[current_section].append(line)
+
+            # Displaying the extracted information
+            for section, content in sections.items():
+                print(f"{section}\n{' '.join(content)}")
+            print()
+
+            driver.quit()
+            return title, sections  # Return the extracted data
         except Exception as e:
             print(e)
-            failed_links.append(link)
-    # Close the browser session
-    driver.quit()
+            driver.quit()
+            return title, None  # Indicate failure
+
+
+    failed_links = []
+
+
+    assert len(df) > 1, "There should be at least 2+ jobs available"
+
+    # Example usage with ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=28) as executor:  # Adjust max_workers based on your resource availability
+        futures = {executor.submit(scrape_job, title, link): (title, link) for title, link in
+                   zip(df['JOB TITLE'], df['Link'])}
+
+        for future in concurrent.futures.as_completed(futures):
+            title, result = future.result()
+            if result:
+                # Update DataFrame with the result
+                df.loc[df['JOB TITLE'] == title, 'RESPONSIBILITIES'] = ' '.join(result["RESPONSIBILITIES:"])
+                df.loc[df['JOB TITLE'] == title, 'BASIC QUALIFICATIONS'] = ' '.join(
+                    result["BASIC QUALIFICATIONS:"])
+                df.loc[df['JOB TITLE'] == title, 'PREFERRED SKILLS AND EXPERIENCE'] = ' '.join(
+                    result["PREFERRED SKILLS AND EXPERIENCE:"])
+                df.loc[df['JOB TITLE'] == title, 'ADDITIONAL REQUIREMENTS'] = ' '.join(
+                    result["ADDITIONAL REQUIREMENTS:"])
+                df.loc[df['JOB TITLE'] == title, 'COMPENSATION AND BENEFITS'] = ' '.join(
+                    result["COMPENSATION AND BENEFITS:"])
+            else:
+                print(f"Failed to process {title}")
+                failed_links.append((title, result))
 
     # Save the DataFrame to a CSV file
-    df.to_csv("spacex_jobs.csv", index=False)
+    df.to_csv("spacex_jobs_.csv", index=False)
 
     # Display the failed links
     print("Failed links:")
