@@ -51,7 +51,6 @@ This project uses the following Python libraries:
     <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-59-14.png" />
     <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-50-30.png" />
     <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-50-38.png" />
-    <img src="https://github.com/Bucanero06/SpaceX_Job_Analysis/blob/master/static/Screenshot%20from%202023-12-08%2015-51-00.png" />
 </p>
 
 ## Future Work
